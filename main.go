@@ -48,6 +48,7 @@ func saveToFile(dirToSave string, localProm string){
 				log.Fatal("error to rename file:", err)
 				os.Exit(1)
 			}
+			f.Close()
 		}
 		time.Sleep(15 * time.Second)
 	}
